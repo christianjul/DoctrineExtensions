@@ -13,12 +13,14 @@ trait BlameableDocument
     /**
      * @Gedmo\Blameable(on="create")
      * @ODM\String
+	 * @var string
      */
     private $createdBy;
 
     /**
      * @Gedmo\Blameable(on="update")
      * @ODM\String
+	 * @var string
      */
     private $updatedBy;
 

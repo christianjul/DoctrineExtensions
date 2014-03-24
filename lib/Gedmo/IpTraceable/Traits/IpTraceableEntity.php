@@ -13,12 +13,14 @@ trait IpTraceableEntity
     /**
      * @Gedmo\IpTraceable(on="create")
      * @ORM\Column(type="string", length=45, nullable=true)
+	 * @var string
      */
     protected $createdFromIp;
 
     /**
      * @Gedmo\IpTraceable(on="update")
      * @ORM\Column(type="string", length=45, nullable=true)
+	 * @var string
      */
     protected $updatedFromIp;
 

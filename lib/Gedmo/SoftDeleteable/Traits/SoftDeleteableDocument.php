@@ -12,6 +12,7 @@ trait SoftDeleteableDocument
 {
     /**
      * @ODM\Date
+	 * @var \DateTime
      */
     protected $deletedAt;
 

@@ -14,24 +14,28 @@ trait NestedSetEntity
     /**
      * @Gedmo\TreeRoot
      * @ORM\Column(name="root", type="integer", nullable=true)
-     */
+	 * @var integer
+	 */
     private $root;
 
     /**
      * @Gedmo\TreeLevel
      * @ORM\Column(name="lvl", type="integer")
+	 * @var integer
      */
     private $level;
 
     /**
      * @Gedmo\TreeLeft
      * @ORM\Column(name="lft", type="integer")
+	 * @var integer
      */
     private $left;
 
     /**
      * @Gedmo\TreeRight
      * @ORM\Column(name="rgt", type="integer")
+	 * @var integer
      */
     private $right;
 

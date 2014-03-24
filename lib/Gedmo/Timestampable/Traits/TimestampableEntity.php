@@ -13,13 +13,15 @@ trait TimestampableEntity
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
+	 * @var \DateTime
      */
     protected $createdAt;
 
     /**
      * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime")
-     */
+	 * @var \DateTime
+	 */
     protected $updatedAt;
 
     /**

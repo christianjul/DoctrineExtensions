@@ -12,14 +12,15 @@ trait SoftDeleteableEntity
 {
     /**
      * @ORM\Column(type="datetime", nullable=true)
-     */
+	 * @var \DateTime
+	 */
     protected $deletedAt;
 
     /**
      * Sets deletedAt.
      *
      * @param \Datetime|null $deletedAt
-     * 
+     *
      * @return $this
      */
     public function setDeletedAt(\DateTime $deletedAt = null)
@@ -38,10 +39,10 @@ trait SoftDeleteableEntity
     {
         return $this->deletedAt;
     }
-    
+
     /**
      * Is deleted?
-     * 
+     *
      * @return bool
      */
     public function isDeleted()
